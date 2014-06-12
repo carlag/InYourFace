@@ -239,14 +239,23 @@
                                     <segue destination="ESC-aL-1fe" kind="push" id="S1C-ZC-mr1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start a campaign" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t41-4Q-1Oh">
+                                <rect key="frame" x="47" y="74" width="226" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.68235294120000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="4do-1J-kwn" secondAttribute="trailing" constant="20" id="4oF-5L-sO5"/>
+                            <constraint firstAttribute="centerX" secondItem="t41-4Q-1Oh" secondAttribute="centerX" id="6aC-O2-Ims"/>
                             <constraint firstItem="e2g-fy-eVC" firstAttribute="top" secondItem="Rpe-Xg-HgC" secondAttribute="bottom" constant="120" id="RPQ-WS-IPN"/>
                             <constraint firstItem="e2g-fy-eVC" firstAttribute="leading" secondItem="oSU-xN-hUx" secondAttribute="leading" constant="10" id="Vnn-K4-eKX"/>
                             <constraint firstItem="h48-gM-sIu" firstAttribute="top" secondItem="4do-1J-kwn" secondAttribute="bottom" constant="10" id="X9A-rK-mO2"/>
                             <constraint firstAttribute="trailing" secondItem="e2g-fy-eVC" secondAttribute="trailing" constant="10" id="b2r-0c-J9T"/>
+                            <constraint firstItem="t41-4Q-1Oh" firstAttribute="top" secondItem="Rpe-Xg-HgC" secondAttribute="bottom" constant="10" id="hgr-9A-die"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Auh-sA-AUt"/>
@@ -262,10 +271,10 @@
             </objects>
             <point key="canvasLocation" x="1073" y="676"/>
         </scene>
-        <!--View Controller-->
+        <!--Video Record View Controller-->
         <scene sceneID="xYc-Kx-Ccn">
             <objects>
-                <viewController id="ESC-aL-1fe" sceneMemberID="viewController">
+                <viewController id="ESC-aL-1fe" customClass="IYFVideoRecordViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ms5-3Z-DkN"/>
                         <viewControllerLayoutGuide type="bottom" id="lL4-Hp-GrW"/>
@@ -273,9 +282,28 @@
                     <view key="view" contentMode="scaleToFill" id="fIr-nc-F20">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXk-ci-f5B">
+                                <rect key="frame" x="81" y="503" width="167" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="J62-59-gl8"/>
+                                </constraints>
+                                <state key="normal" title="Record 30 second video">
+                                    <color key="titleColor" red="0.68235294120000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordAndPlay:" destination="ESC-aL-1fe" eventType="touchUpInside" id="6ds-v8-DFE"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="xTN-2e-7Et"/>
+                    <connections>
+                        <outlet property="recordButton" destination="FXk-ci-f5B" id="H1K-gb-GVj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mls-FY-Wxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -292,6 +320,18 @@
                     <view key="view" contentMode="scaleToFill" id="mJX-Ph-SJt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a47-bz-jDp">
+                                <rect key="frame" x="132" y="274" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="test">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fID-NK-oR4" kind="push" id="6Bx-ky-Ku7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="rbS-rA-C5Q"/>
@@ -300,6 +340,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gfX-h4-IZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1063" y="-112"/>
+        </scene>
+        <!--Video Play View Controller-->
+        <scene sceneID="pts-am-DBH">
+            <objects>
+                <viewController id="fID-NK-oR4" customClass="IYFVideoPlayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xS8-5Q-kPJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="93m-DH-Ogd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sGG-rr-MfQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6A-7q-UFd">
+                                <rect key="frame" x="98" y="455" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playVideo:" destination="fID-NK-oR4" eventType="touchUpInside" id="iOU-nQ-Hza"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="M2i-kg-L9C"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vc9-xp-gLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1534" y="-135"/>
         </scene>
     </scenes>
     <resources>

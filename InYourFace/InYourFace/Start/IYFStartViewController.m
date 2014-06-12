@@ -30,7 +30,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setTitle:@"Start a campaign"];
+    
+//    UINavigationBar *navBar = self.navigationController.navigationBar;
+//    UIImage *image = [UIImage imageNamed:@"IYFlogo"];
+//    [navBar setBackgroundImage:image forBarMetrics:UIBar];
+    
     CGColorRef tintColor = [UIColor colorWithRed:174/255.0f green:255/255.0f blue:0 alpha:1].CGColor;
     self.continueButton.layer.borderColor = tintColor;
     self.continueButton.layer.borderWidth = 1;

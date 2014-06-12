@@ -24,6 +24,14 @@
 		CF6525441949A678008F8A0F /* IYFLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6525431949A678008F8A0F /* IYFLaunchViewController.m */; };
 		CF6525491949A854008F8A0F /* IYFDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6525481949A854008F8A0F /* IYFDiscoverViewController.m */; };
 		CF65254C1949A860008F8A0F /* IYFStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF65254B1949A860008F8A0F /* IYFStartViewController.m */; };
+		CF65254E1949C45F008F8A0F /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF65254D1949C45F008F8A0F /* AssetsLibrary.framework */; };
+		CF6525501949C467008F8A0F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF65254F1949C467008F8A0F /* AVFoundation.framework */; };
+		CF6525521949C46E008F8A0F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6525511949C46E008F8A0F /* CoreMedia.framework */; };
+		CF6525541949C475008F8A0F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6525531949C475008F8A0F /* MediaPlayer.framework */; };
+		CF6525561949C47D008F8A0F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6525551949C47D008F8A0F /* MobileCoreServices.framework */; };
+		CF6525581949C484008F8A0F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6525571949C484008F8A0F /* QuartzCore.framework */; };
+		CF65255D1949C4E5008F8A0F /* IYFVideoPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF65255C1949C4E5008F8A0F /* IYFVideoPlayViewController.m */; };
+		CF6525601949C4FB008F8A0F /* IYFVideoRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF65255F1949C4FB008F8A0F /* IYFVideoRecordViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +70,16 @@
 		CF6525481949A854008F8A0F /* IYFDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYFDiscoverViewController.m; sourceTree = "<group>"; };
 		CF65254A1949A860008F8A0F /* IYFStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IYFStartViewController.h; sourceTree = "<group>"; };
 		CF65254B1949A860008F8A0F /* IYFStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYFStartViewController.m; sourceTree = "<group>"; };
+		CF65254D1949C45F008F8A0F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		CF65254F1949C467008F8A0F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CF6525511949C46E008F8A0F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CF6525531949C475008F8A0F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		CF6525551949C47D008F8A0F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CF6525571949C484008F8A0F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CF65255B1949C4E5008F8A0F /* IYFVideoPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IYFVideoPlayViewController.h; sourceTree = "<group>"; };
+		CF65255C1949C4E5008F8A0F /* IYFVideoPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYFVideoPlayViewController.m; sourceTree = "<group>"; };
+		CF65255E1949C4FB008F8A0F /* IYFVideoRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IYFVideoRecordViewController.h; sourceTree = "<group>"; };
+		CF65255F1949C4FB008F8A0F /* IYFVideoRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYFVideoRecordViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +87,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF6525581949C484008F8A0F /* QuartzCore.framework in Frameworks */,
+				CF6525561949C47D008F8A0F /* MobileCoreServices.framework in Frameworks */,
+				CF6525541949C475008F8A0F /* MediaPlayer.framework in Frameworks */,
+				CF6525521949C46E008F8A0F /* CoreMedia.framework in Frameworks */,
+				CF6525501949C467008F8A0F /* AVFoundation.framework in Frameworks */,
+				CF65254E1949C45F008F8A0F /* AssetsLibrary.framework in Frameworks */,
 				CF65250E19499D37008F8A0F /* CoreGraphics.framework in Frameworks */,
 				CF65251019499D37008F8A0F /* UIKit.framework in Frameworks */,
 				CF65250C19499D37008F8A0F /* Foundation.framework in Frameworks */,
@@ -110,6 +134,12 @@
 		CF65250A19499D37008F8A0F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CF6525571949C484008F8A0F /* QuartzCore.framework */,
+				CF6525551949C47D008F8A0F /* MobileCoreServices.framework */,
+				CF6525531949C475008F8A0F /* MediaPlayer.framework */,
+				CF6525511949C46E008F8A0F /* CoreMedia.framework */,
+				CF65254F1949C467008F8A0F /* AVFoundation.framework */,
+				CF65254D1949C45F008F8A0F /* AssetsLibrary.framework */,
 				CF65250B19499D37008F8A0F /* Foundation.framework */,
 				CF65250D19499D37008F8A0F /* CoreGraphics.framework */,
 				CF65250F19499D37008F8A0F /* UIKit.framework */,
@@ -121,6 +151,8 @@
 		CF65251119499D37008F8A0F /* InYourFace */ = {
 			isa = PBXGroup;
 			children = (
+				CF6525591949C4B3008F8A0F /* Play */,
+				CF65255A1949C4B3008F8A0F /* Record */,
 				CF6525451949A839008F8A0F /* Discover */,
 				CF6525461949A839008F8A0F /* Start */,
 				CF6525411949A64C008F8A0F /* Launch */,
@@ -189,6 +221,24 @@
 				CF65254B1949A860008F8A0F /* IYFStartViewController.m */,
 			);
 			path = Start;
+			sourceTree = "<group>";
+		};
+		CF6525591949C4B3008F8A0F /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				CF65255B1949C4E5008F8A0F /* IYFVideoPlayViewController.h */,
+				CF65255C1949C4E5008F8A0F /* IYFVideoPlayViewController.m */,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
+		CF65255A1949C4B3008F8A0F /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				CF65255E1949C4FB008F8A0F /* IYFVideoRecordViewController.h */,
+				CF65255F1949C4FB008F8A0F /* IYFVideoRecordViewController.m */,
+			);
+			path = Record;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,11 +339,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF65255D1949C4E5008F8A0F /* IYFVideoPlayViewController.m in Sources */,
 				CF65252219499D37008F8A0F /* IYFViewController.m in Sources */,
 				CF65251819499D37008F8A0F /* main.m in Sources */,
 				CF6525491949A854008F8A0F /* IYFDiscoverViewController.m in Sources */,
 				CF6525441949A678008F8A0F /* IYFLaunchViewController.m in Sources */,
 				CF65254C1949A860008F8A0F /* IYFStartViewController.m in Sources */,
+				CF6525601949C4FB008F8A0F /* IYFVideoRecordViewController.m in Sources */,
 				CF65251C19499D37008F8A0F /* IYFAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
