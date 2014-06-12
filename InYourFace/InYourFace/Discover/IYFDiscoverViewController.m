@@ -11,6 +11,7 @@
 
 @interface IYFDiscoverViewController ()
 
+@property (nonatomic, strong) NSArray *campaignNames;
 @property (nonatomic, assign) UIColor *tintColor;
 
 @end
@@ -29,7 +30,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setTitle:@"Discover"];
+    [self populateCampaignNames];
+    [self setTitle:@"Discover Campaigns"];
     UIColor *tintColor = [UIColor colorWithRed:0/255.0f green:204/255.0f blue:255/255.0f alpha:1];
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName :tintColor};
     [self.navigationController.navigationBar setTintColor:tintColor];
@@ -59,29 +61,35 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%ld", (long)(indexPath.row + 1)]];
     
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
-    dispatch_async(queue, ^{
-        UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:
-                                                 [NSURL URLWithString:@"http://lorempixel.com/400/200/"]]];
-        dispatch_sync(dispatch_get_main_queue(), ^{
-            UIImageView *imageView = [[UIImageView alloc]initWithImage:image];
-            
-            UIView *campaignName = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(cell.contentView.frame) - 40, CGRectGetWidth(cell.contentView.frame), 50)];
-            UIColor *backgroundColor = [UIColor darkGrayColor];
-            
-            campaignName.backgroundColor = [backgroundColor colorWithAlphaComponent:0.7];
-            [imageView addSubview:campaignName];
-            UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(10,0,campaignName.frame.size.width-20,40)];
-            [label setText:@"Mud schools"];
-            UIColor *tintColor = [UIColor colorWithRed:0/255.0f green:204/255.0f blue:255/255.0f alpha:1];
-            label.textColor = tintColor;
+    UIImageView *imageView = [[UIImageView alloc]init];
 
-            [campaignName addSubview:label];
-            [cell addSubview:imageView];
-            [cell setNeedsLayout];
-        });
-    });
+    imageView.frame = CGRectMake(0,0, 320, 200);
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
+    
+    [imageView setImage:image];
+    
+    UIView *campaignName = [[UIView alloc] initWithFrame:CGRectMake(0, 200 - 50,320, 50)];
+    UIColor *backgroundColor = [UIColor darkGrayColor];
+    
+    campaignName.backgroundColor = [backgroundColor colorWithAlphaComponent:0.7];
+    [imageView addSubview:campaignName];
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(10,0,320-70,50)];
+    [label setText:[self.campaignNames objectAtIndex:indexPath.row]];
+    UIColor *tintColor = [UIColor colorWithRed:0/255.0f green:204/255.0f blue:255/255.0f alpha:1];
+    label.textColor = tintColor;
+    
+    UILabel *videoCountLabel = [[UILabel alloc]initWithFrame:CGRectMake(320-50, 0, 40, 50)];
+    [videoCountLabel setText:[NSString stringWithFormat:@"%ld", (long)(indexPath.row*2 + 14)]];
+    videoCountLabel.textColor = tintColor;
+    videoCountLabel.textAlignment = NSTextAlignmentRight;
+
+    
+    [campaignName addSubview:label];
+    [campaignName addSubview:videoCountLabel];
+    [cell addSubview:imageView];
+    [cell setNeedsLayout];
     
     return cell;
 }
@@ -96,6 +104,8 @@
     if (indexPath.item == 0)
     {
         [self performSegueWithIdentifier:@"ViewCampaign" sender:self];
+        
+        
     }
 }
 
@@ -104,5 +114,8 @@
     IYFVideoPlayViewController *controller = segue.destinationViewController;
 }
 
+-(void)populateCampaignNames {
+    self.campaignNames = @[@"Mud Schools", @"Service Delivery", @"Save the Rhinos", @"Healthcare", @"Unemployment", @"Infrastructure", @"School Exams", @"Education", @"Corruption", @"Pick Pockets"];
+}
 
 @end

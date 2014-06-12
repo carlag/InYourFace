@@ -120,13 +120,14 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3t-cp-DQY">
-                                        <rect key="frame" x="149" y="140" width="141" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3t-cp-DQY">
+                                        <rect key="frame" x="149" y="140" width="125" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="KUI-4A-h9l"/>
                                         </constraints>
-                                        <state key="normal" title="service delivery">
+                                        <inset key="imageEdgeInsets" minX="98" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="education" image="IYFarrow">
                                             <color key="titleColor" red="0.68235294120000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -186,13 +187,14 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZA-Gh-ATQ">
-                                        <rect key="frame" x="146" y="50" width="144" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZA-Gh-ATQ">
+                                        <rect key="frame" x="146" y="50" width="128" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="dQW-rf-01L"/>
                                         </constraints>
-                                        <state key="normal" title="cape town">
+                                        <inset key="imageEdgeInsets" minX="107" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="cape town" image="IYFarrow">
                                             <color key="titleColor" red="0.68235294120000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -206,12 +208,11 @@
                                     <constraint firstAttribute="trailing" secondItem="hDt-0l-f8n" secondAttribute="trailing" constant="20" id="5LR-iI-Chu"/>
                                     <constraint firstItem="vTB-Qe-S6p" firstAttribute="leading" secondItem="e2g-fy-eVC" secondAttribute="leading" constant="10" id="7lc-pe-Mch"/>
                                     <constraint firstItem="hDt-0l-f8n" firstAttribute="top" secondItem="k3t-cp-DQY" secondAttribute="bottom" constant="10" id="DS4-Ir-4rY"/>
-                                    <constraint firstAttribute="trailing" secondItem="PZA-Gh-ATQ" secondAttribute="trailing" constant="10" id="Fq1-NP-cJb"/>
                                     <constraint firstItem="fM6-IK-O3V" firstAttribute="leading" secondItem="e2g-fy-eVC" secondAttribute="leading" constant="10" id="HMW-9k-sAG"/>
                                     <constraint firstAttribute="height" constant="250" id="Hak-tF-ZEK"/>
                                     <constraint firstItem="gpX-u1-jQW" firstAttribute="leading" secondItem="e2g-fy-eVC" secondAttribute="leading" constant="10" id="KLf-PS-blq"/>
                                     <constraint firstItem="Sfh-kE-6z8" firstAttribute="top" secondItem="gpX-u1-jQW" secondAttribute="bottom" constant="10" id="LQd-JI-Enz"/>
-                                    <constraint firstAttribute="trailing" secondItem="k3t-cp-DQY" secondAttribute="trailing" constant="10" id="LnD-Dc-MXy"/>
+                                    <constraint firstAttribute="trailing" secondItem="PZA-Gh-ATQ" secondAttribute="trailing" constant="26" id="MZe-RC-cie"/>
                                     <constraint firstItem="Sfh-kE-6z8" firstAttribute="leading" secondItem="e2g-fy-eVC" secondAttribute="leading" constant="11" id="Obg-QB-rL1"/>
                                     <constraint firstItem="fM6-IK-O3V" firstAttribute="top" secondItem="e2g-fy-eVC" secondAttribute="top" constant="10" id="QIU-KL-hnB"/>
                                     <constraint firstItem="PZA-Gh-ATQ" firstAttribute="leading" secondItem="vTB-Qe-S6p" secondAttribute="trailing" constant="10" id="QVb-C8-3Cu"/>
@@ -222,6 +223,7 @@
                                     <constraint firstItem="X1L-Pi-EQO" firstAttribute="top" secondItem="e2g-fy-eVC" secondAttribute="top" constant="10" id="hyK-M8-7NN"/>
                                     <constraint firstItem="k3t-cp-DQY" firstAttribute="top" secondItem="PZA-Gh-ATQ" secondAttribute="bottom" constant="60" id="kfD-ig-3Ar"/>
                                     <constraint firstItem="k3t-cp-DQY" firstAttribute="leading" secondItem="gpX-u1-jQW" secondAttribute="trailing" constant="9" id="kpi-gl-XuS"/>
+                                    <constraint firstAttribute="trailing" secondItem="k3t-cp-DQY" secondAttribute="trailing" constant="26" id="nBn-5P-5Xb"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4do-1J-kwn">
@@ -358,9 +360,25 @@
                     <view key="view" contentMode="scaleToFill" id="sGG-rr-MfQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Amb-wC-NWm">
+                                <rect key="frame" x="0.0" y="80" width="320" height="255"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Amb-wC-NWm" firstAttribute="top" secondItem="xS8-5Q-kPJ" secondAttribute="bottom" constant="16" id="L4p-tM-Sdl"/>
+                            <constraint firstItem="93m-DH-Ogd" firstAttribute="top" secondItem="Amb-wC-NWm" secondAttribute="bottom" constant="233" id="PpA-2S-xQU"/>
+                            <constraint firstAttribute="trailing" secondItem="Amb-wC-NWm" secondAttribute="trailing" id="nmP-CG-aRy"/>
+                            <constraint firstItem="Amb-wC-NWm" firstAttribute="leading" secondItem="sGG-rr-MfQ" secondAttribute="leading" id="rGx-Hx-0Vx"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="M2i-kg-L9C"/>
+                    <connections>
+                        <outlet property="mediaLibraryView" destination="Amb-wC-NWm" id="LnB-xZ-I6O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vc9-xp-gLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -368,6 +386,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="IYFarrow" width="10" height="10"/>
         <image name="IYFdiscover" width="301" height="301"/>
         <image name="IYFlogo" width="210" height="148"/>
         <image name="IYFstart" width="301" height="301"/>

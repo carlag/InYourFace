@@ -10,6 +10,9 @@
 
 @interface IYFVideoPlayViewController ()
 
+@property (nonatomic, strong) UIImagePickerController *mediaUIController;
+@property (nonatomic, strong) UIPopoverController *popOver;
+
 @end
 
 @implementation IYFVideoPlayViewController
@@ -23,10 +26,19 @@
     return self;
 }
 
+-(void)viewDidDisappear:(BOOL)animated {
+
+    self.mediaUIController.delegate = nil;
+    [self.mediaUIController willMoveToParentViewController:nil];
+
+    [super viewDidDisappear:animated];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self startMediaBrowserFromViewController:self usingDelegate:self];
+    [self addMediaBrowserAsChildViewControllerUsingDelegate:self];
+    self.title = @"Mud Schools";
 
     // Do any additional setup after loading the view.
 }
@@ -37,28 +49,23 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-//- (IBAction)playVideo:(id)sender {
-//    [self startMediaBrowserFromViewController:self usingDelegate:self];
-//}
-
--(BOOL)startMediaBrowserFromViewController:(UIViewController*)controller usingDelegate:(id )delegate {
+-(BOOL)addMediaBrowserAsChildViewControllerUsingDelegate:(id )delegate {
     // 1 - Validations
     if (([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeSavedPhotosAlbum] == NO)
-        || (delegate == nil)
-        || (controller == nil)) {
+        || (delegate == nil)) {
         return NO;
     }
+    
+//    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+
+//    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPa d) {
+//        UIPopoverController *popover = [[UIPopoverController alloc] initWithContentViewController:picker];
+//        [popover presentPopoverFromRect:self.view.bounds inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+    //    self.popOver = popover;
+    //} else {
+    //    [self presentViewController:picker animated:YES];
+   // }
     // 2 - Get image picker
     UIImagePickerController *mediaUI = [[UIImagePickerController alloc] init];
     mediaUI.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
@@ -68,7 +75,14 @@
     mediaUI.allowsEditing = YES;
     mediaUI.delegate = delegate;
     // 3 - Display image picker
-    [controller presentViewController:mediaUI animated:YES completion:nil];
+    mediaUI.view.backgroundColor = [UIColor blackColor];
+
+    self.mediaUIController = mediaUI;
+    
+    [self addChildViewController:self.mediaUIController];
+    [self.view addSubview:mediaUI.view];
+    [self didMoveToParentViewController:self];
+
     return YES;
 }
 
