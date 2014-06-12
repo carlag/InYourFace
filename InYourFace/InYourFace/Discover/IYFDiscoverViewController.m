@@ -31,14 +31,20 @@
 {
     [super viewDidLoad];
     [self populateCampaignNames];
-    [self setTitle:@"Discover Campaigns"];
-    UIColor *tintColor = [UIColor colorWithRed:0/255.0f green:204/255.0f blue:255/255.0f alpha:1];
-    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName :tintColor};
-    [self.navigationController.navigationBar setTintColor:tintColor];
+
     [self.campaignCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"Cell"];
 
 
     // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self setTitle:@"Discover Campaigns"];
+    UIColor *tintColor = [UIColor colorWithRed:0/255.0f green:204/255.0f blue:255/255.0f alpha:1];
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName :tintColor};
+    [self.navigationController.navigationBar setTintColor:tintColor];
 }
 
 - (void)didReceiveMemoryWarning

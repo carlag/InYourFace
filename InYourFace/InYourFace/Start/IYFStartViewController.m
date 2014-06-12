@@ -31,11 +31,8 @@
 {
     [super viewDidLoad];
     
-    [self setTitle:@"Start a campaign"];
     UIColor *tintColor = [UIColor colorWithRed:174/255.0f green:255/255.0f blue:0 alpha:1];
-    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName :tintColor};
-    [self.navigationController.navigationBar setTintColor:tintColor];
-    
+
     self.continueButton.layer.borderColor = tintColor.CGColor;
     self.continueButton.layer.borderWidth = 1;
     self.continueButton.layer.cornerRadius = 4;
@@ -47,6 +44,15 @@
     self.userCity.layer.borderColor = tintColor.CGColor;
     self.userCity.layer.borderWidth = 1;
     self.userCity.layer.cornerRadius = 4;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self setTitle:@"Start a campaign"];
+    UIColor *tintColor = [UIColor colorWithRed:174/255.0f green:255/255.0f blue:0 alpha:1];
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName :tintColor};
+    [self.navigationController.navigationBar setTintColor:tintColor];
 }
 
 - (void)didReceiveMemoryWarning

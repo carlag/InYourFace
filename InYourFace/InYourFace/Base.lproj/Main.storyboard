@@ -107,7 +107,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e2g-fy-eVC" userLabel="Form Container">
-                                <rect key="frame" x="10" y="184" width="300" height="250"/>
+                                <rect key="frame" x="10" y="134" width="300" height="250"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I want to start a  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpX-u1-jQW">
@@ -194,7 +194,7 @@
                                             <constraint firstAttribute="height" constant="30" id="dQW-rf-01L"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="107" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="cape town" image="IYFarrow">
+                                        <state key="normal" title="Cape Town" image="IYFarrow">
                                             <color key="titleColor" red="0.68235294120000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -245,7 +245,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="4do-1J-kwn" secondAttribute="trailing" constant="20" id="4oF-5L-sO5"/>
-                            <constraint firstItem="e2g-fy-eVC" firstAttribute="top" secondItem="Rpe-Xg-HgC" secondAttribute="bottom" constant="120" id="RPQ-WS-IPN"/>
+                            <constraint firstItem="e2g-fy-eVC" firstAttribute="top" secondItem="Rpe-Xg-HgC" secondAttribute="bottom" constant="70" id="RPQ-WS-IPN"/>
                             <constraint firstItem="e2g-fy-eVC" firstAttribute="leading" secondItem="oSU-xN-hUx" secondAttribute="leading" constant="10" id="Vnn-K4-eKX"/>
                             <constraint firstItem="h48-gM-sIu" firstAttribute="top" secondItem="4do-1J-kwn" secondAttribute="bottom" constant="10" id="X9A-rK-mO2"/>
                             <constraint firstAttribute="trailing" secondItem="e2g-fy-eVC" secondAttribute="trailing" constant="10" id="b2r-0c-J9T"/>
@@ -276,13 +276,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXk-ci-f5B">
-                                <rect key="frame" x="81" y="503" width="167" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXk-ci-f5B">
+                                <rect key="frame" x="60" y="263" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="J62-59-gl8"/>
-                                </constraints>
-                                <state key="normal" title="Record 30 second video">
+                                <state key="normal" image="IYF Talktohand">
                                     <color key="titleColor" red="0.68235294120000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -290,6 +287,13 @@
                                     <action selector="recordAndPlay:" destination="ESC-aL-1fe" eventType="touchUpInside" id="6ds-v8-DFE"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Record your 30 second video. State your name and the reason why you are starting this campaign.  " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="a9T-Il-13m">
+                                <rect key="frame" x="15" y="-51" width="300" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -386,6 +390,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="IYF Talktohand" width="646" height="644"/>
         <image name="IYFarrow" width="10" height="10"/>
         <image name="IYFdiscover" width="301" height="301"/>
         <image name="IYFlogo" width="210" height="148"/>

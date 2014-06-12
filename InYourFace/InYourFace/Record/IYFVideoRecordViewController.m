@@ -28,7 +28,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self setTitle:@"Record"];
+    UIColor *tintColor = [UIColor colorWithRed:255/255.0f green:98/255.0f blue:0/255.0f alpha:1];
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName :tintColor};
+    [self.navigationController.navigationBar setTintColor:tintColor];
 }
 
 - (void)didReceiveMemoryWarning
