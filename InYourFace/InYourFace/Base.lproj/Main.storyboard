@@ -307,10 +307,10 @@
             </objects>
             <point key="canvasLocation" x="1807" y="671"/>
         </scene>
-        <!--View Controller-->
+        <!--Video Saved View Controller-->
         <scene sceneID="8Qu-pZ-Rq0">
             <objects>
-                <viewController id="7GU-nV-k25" sceneMemberID="viewController">
+                <viewController id="7GU-nV-k25" customClass="IYFVideoSavedViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JXf-ey-HiG"/>
                         <viewControllerLayoutGuide type="bottom" id="K7y-N6-QdQ"/>
@@ -327,7 +327,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0W4-6d-Q3H">
-                                <rect key="frame" x="120" y="333" width="104" height="30"/>
+                                <rect key="frame" x="89" y="269" width="143" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="View campaign">
                                     <color key="titleColor" red="1" green="0.38431372549999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -341,6 +341,9 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="YAw-aE-DSd"/>
+                    <connections>
+                        <outlet property="viewCampaignButton" destination="0W4-6d-Q3H" id="aJh-QK-L1n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPT-8L-P8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

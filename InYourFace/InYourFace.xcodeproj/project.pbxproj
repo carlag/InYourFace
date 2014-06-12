@@ -34,6 +34,7 @@
 		CF6525601949C4FB008F8A0F /* IYFVideoRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF65255F1949C4FB008F8A0F /* IYFVideoRecordViewController.m */; };
 		CF6525641949D826008F8A0F /* IYFGradientImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6525631949D826008F8A0F /* IYFGradientImageView.m */; };
 		CFBB5DFE194A31FF00982923 /* IYFCampaignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBB5DFD194A31FF00982923 /* IYFCampaignViewController.m */; };
+		CFBB5E01194A624E00982923 /* IYFVideoSavedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBB5E00194A624E00982923 /* IYFVideoSavedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,8 @@
 		CF6525631949D826008F8A0F /* IYFGradientImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYFGradientImageView.m; sourceTree = "<group>"; };
 		CFBB5DFC194A31FF00982923 /* IYFCampaignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IYFCampaignViewController.h; sourceTree = "<group>"; };
 		CFBB5DFD194A31FF00982923 /* IYFCampaignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYFCampaignViewController.m; sourceTree = "<group>"; };
+		CFBB5DFF194A624E00982923 /* IYFVideoSavedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IYFVideoSavedViewController.h; sourceTree = "<group>"; };
+		CFBB5E00194A624E00982923 /* IYFVideoSavedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYFVideoSavedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +249,8 @@
 			children = (
 				CF65255E1949C4FB008F8A0F /* IYFVideoRecordViewController.h */,
 				CF65255F1949C4FB008F8A0F /* IYFVideoRecordViewController.m */,
+				CFBB5DFF194A624E00982923 /* IYFVideoSavedViewController.h */,
+				CFBB5E00194A624E00982923 /* IYFVideoSavedViewController.m */,
 			);
 			path = Record;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				CF65252219499D37008F8A0F /* IYFViewController.m in Sources */,
 				CF65251819499D37008F8A0F /* main.m in Sources */,
 				CF6525491949A854008F8A0F /* IYFDiscoverViewController.m in Sources */,
+				CFBB5E01194A624E00982923 /* IYFVideoSavedViewController.m in Sources */,
 				CF6525441949A678008F8A0F /* IYFLaunchViewController.m in Sources */,
 				CF65254C1949A860008F8A0F /* IYFStartViewController.m in Sources */,
 				CF6525601949C4FB008F8A0F /* IYFVideoRecordViewController.m in Sources */,
