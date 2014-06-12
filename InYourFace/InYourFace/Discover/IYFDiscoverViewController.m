@@ -77,7 +77,7 @@
     [imageView setImage:image];
     
     UIView *campaignName = [[UIView alloc] initWithFrame:CGRectMake(0, 200 - 50,320, 50)];
-    UIColor *backgroundColor = [UIColor darkGrayColor];
+    UIColor *backgroundColor = [UIColor blackColor];
     
     campaignName.backgroundColor = [backgroundColor colorWithAlphaComponent:0.7];
     [imageView addSubview:campaignName];

@@ -103,6 +103,7 @@
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Video Saved" message:@"Saved To Photo Album"
                                                        delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
+        [self performSegueWithIdentifier:@"VideoUploaded" sender:self];
     }
 }
 

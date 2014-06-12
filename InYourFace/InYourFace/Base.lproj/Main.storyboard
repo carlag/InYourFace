@@ -300,11 +300,51 @@
                     <navigationItem key="navigationItem" id="xTN-2e-7Et"/>
                     <connections>
                         <outlet property="recordButton" destination="FXk-ci-f5B" id="H1K-gb-GVj"/>
+                        <segue destination="7GU-nV-k25" kind="push" identifier="VideoUploaded" id="mMm-f3-Ay5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mls-FY-Wxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1807" y="671"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8Qu-pZ-Rq0">
+            <objects>
+                <viewController id="7GU-nV-k25" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JXf-ey-HiG"/>
+                        <viewControllerLayoutGuide type="bottom" id="K7y-N6-QdQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZRp-Jc-AmD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you for adding a video to this campaign." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="yBO-5C-m0C">
+                                <rect key="frame" x="10" y="-42" width="300" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0W4-6d-Q3H">
+                                <rect key="frame" x="120" y="333" width="104" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="View campaign">
+                                    <color key="titleColor" red="1" green="0.38431372549999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fID-NK-oR4" kind="push" id="veR-Bn-wzM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YAw-aE-DSd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uPT-8L-P8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2371" y="626"/>
         </scene>
         <!--Discover View Controller-->
         <scene sceneID="umk-xl-hbC">
@@ -496,8 +536,9 @@
                     <view key="view" contentMode="scaleToFill" id="X2h-FV-XOz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cp6-eq-IAA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0G-Yf-3Ur" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -519,5 +560,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="jo5-j6-3Rv"/>
+        <segue reference="veR-Bn-wzM"/>
     </inferredMetricsTieBreakers>
 </document>
