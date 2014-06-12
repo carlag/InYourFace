@@ -26,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     // Do any additional setup after loading the view.
 }
 
@@ -36,6 +37,29 @@
     UIColor *tintColor = [UIColor colorWithRed:0/255.0f green:204/255.0f blue:255/255.0f alpha:1];
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName :tintColor};
     [self.navigationController.navigationBar setTintColor:tintColor];
+    
+    self.campaignImageView.layer.cornerRadius =75;
+    self.campaignImageView.layer.masksToBounds = YES;
+    
+    self.contactButton.layer.borderColor = tintColor.CGColor;
+    self.contactButton.layer.borderWidth = 1;
+    self.contactButton.layer.cornerRadius = 4;
+    
+    self.mapButton.layer.borderColor = tintColor.CGColor;
+    self.mapButton.layer.borderWidth = 1;
+    self.mapButton.layer.cornerRadius = 4;
+    
+    self.viewVideosButton.layer.borderColor = tintColor.CGColor;
+    self.viewVideosButton.layer.borderWidth = 1;
+    self.viewVideosButton.layer.cornerRadius = 4;
+    
+    self.followButton.layer.borderColor = tintColor.CGColor;
+    self.followButton.layer.borderWidth = 1;
+    self.followButton.layer.cornerRadius = 4;
+    
+    self.addToCampaignButton.layer.borderColor = tintColor.CGColor;
+    self.addToCampaignButton.layer.borderWidth = 1;
+    self.addToCampaignButton.layer.cornerRadius = 4;
 }
 
 - (void)didReceiveMemoryWarning

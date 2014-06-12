@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface IYFCampaignViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UIView *campaignImage;
 @property (weak, nonatomic) IBOutlet UIButton *contactButton;
 @property (weak, nonatomic) IBOutlet UIButton *mapButton;
 @property (weak, nonatomic) IBOutlet UIButton *viewVideosButton;
 @property (weak, nonatomic) IBOutlet UIButton *followButton;
 @property (weak, nonatomic) IBOutlet UIButton *addToCampaignButton;
+@property (weak, nonatomic) IBOutlet UIImageView *campaignImageView;
 
 @end
