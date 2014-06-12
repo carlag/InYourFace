@@ -33,6 +33,7 @@
 		CF65255D1949C4E5008F8A0F /* IYFVideoPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF65255C1949C4E5008F8A0F /* IYFVideoPlayViewController.m */; };
 		CF6525601949C4FB008F8A0F /* IYFVideoRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF65255F1949C4FB008F8A0F /* IYFVideoRecordViewController.m */; };
 		CF6525641949D826008F8A0F /* IYFGradientImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6525631949D826008F8A0F /* IYFGradientImageView.m */; };
+		CFBB5DFE194A31FF00982923 /* IYFCampaignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBB5DFD194A31FF00982923 /* IYFCampaignViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,8 @@
 		CF65255F1949C4FB008F8A0F /* IYFVideoRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYFVideoRecordViewController.m; sourceTree = "<group>"; };
 		CF6525621949D826008F8A0F /* IYFGradientImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IYFGradientImageView.h; sourceTree = "<group>"; };
 		CF6525631949D826008F8A0F /* IYFGradientImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYFGradientImageView.m; sourceTree = "<group>"; };
+		CFBB5DFC194A31FF00982923 /* IYFCampaignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IYFCampaignViewController.h; sourceTree = "<group>"; };
+		CFBB5DFD194A31FF00982923 /* IYFCampaignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYFCampaignViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,7 @@
 		CF65251119499D37008F8A0F /* InYourFace */ = {
 			isa = PBXGroup;
 			children = (
+				CFBB5DFB194A319700982923 /* Campaign */,
 				CF6525591949C4B3008F8A0F /* Play */,
 				CF65255A1949C4B3008F8A0F /* Record */,
 				CF6525451949A839008F8A0F /* Discover */,
@@ -244,6 +248,15 @@
 				CF65255F1949C4FB008F8A0F /* IYFVideoRecordViewController.m */,
 			);
 			path = Record;
+			sourceTree = "<group>";
+		};
+		CFBB5DFB194A319700982923 /* Campaign */ = {
+			isa = PBXGroup;
+			children = (
+				CFBB5DFC194A31FF00982923 /* IYFCampaignViewController.h */,
+				CFBB5DFD194A31FF00982923 /* IYFCampaignViewController.m */,
+			);
+			path = Campaign;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF65255D1949C4E5008F8A0F /* IYFVideoPlayViewController.m in Sources */,
+				CFBB5DFE194A31FF00982923 /* IYFCampaignViewController.m in Sources */,
 				CF65252219499D37008F8A0F /* IYFViewController.m in Sources */,
 				CF65251819499D37008F8A0F /* main.m in Sources */,
 				CF6525491949A854008F8A0F /* IYFDiscoverViewController.m in Sources */,
@@ -557,6 +571,7 @@
 				CF65253C19499D37008F8A0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF65253D19499D37008F8A0F /* Build configuration list for PBXNativeTarget "InYourFaceTests" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +580,7 @@
 				CF65253F19499D37008F8A0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
