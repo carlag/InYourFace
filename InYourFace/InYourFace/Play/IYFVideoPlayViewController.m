@@ -26,6 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self startMediaBrowserFromViewController:self usingDelegate:self];
+
     // Do any additional setup after loading the view.
 }
 
@@ -46,9 +48,9 @@
 }
 */
 
-- (IBAction)playVideo:(id)sender {
-    [self startMediaBrowserFromViewController:self usingDelegate:self];
-}
+//- (IBAction)playVideo:(id)sender {
+//    [self startMediaBrowserFromViewController:self usingDelegate:self];
+//}
 
 -(BOOL)startMediaBrowserFromViewController:(UIViewController*)controller usingDelegate:(id )delegate {
     // 1 - Validations

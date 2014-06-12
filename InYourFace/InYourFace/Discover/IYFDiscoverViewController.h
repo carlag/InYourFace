@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IYFDiscoverViewController : UIViewController
+@interface IYFDiscoverViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
+@property (weak, nonatomic) IBOutlet UICollectionView *campaignCollectionView;
 
 @end

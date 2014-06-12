@@ -12,7 +12,7 @@
 
 @interface IYFVideoPlayViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
-- (IBAction)playVideo:(id)sender;
+//- (IBAction)playVideo:(id)sender;
 
 // For opening UIImagePickerController
 -(BOOL)startMediaBrowserFromViewController:(UIViewController*)controller usingDelegate:(id )delegate;

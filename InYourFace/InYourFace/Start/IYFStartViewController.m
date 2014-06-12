@@ -31,20 +31,20 @@
 {
     [super viewDidLoad];
     
-//    UINavigationBar *navBar = self.navigationController.navigationBar;
-//    UIImage *image = [UIImage imageNamed:@"IYFlogo"];
-//    [navBar setBackgroundImage:image forBarMetrics:UIBar];
+    [self setTitle:@"Start a campaign"];
+    UIColor *tintColor = [UIColor colorWithRed:174/255.0f green:255/255.0f blue:0 alpha:1];
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName :tintColor};
+    [self.navigationController.navigationBar setTintColor:tintColor];
     
-    CGColorRef tintColor = [UIColor colorWithRed:174/255.0f green:255/255.0f blue:0 alpha:1].CGColor;
-    self.continueButton.layer.borderColor = tintColor;
+    self.continueButton.layer.borderColor = tintColor.CGColor;
     self.continueButton.layer.borderWidth = 1;
     self.continueButton.layer.cornerRadius = 4;
     
-    self.campaignCategory.layer.borderColor = tintColor;
+    self.campaignCategory.layer.borderColor = tintColor.CGColor;
     self.campaignCategory.layer.borderWidth = 1;
     self.campaignCategory.layer.cornerRadius = 4;
     
-    self.userCity.layer.borderColor = tintColor;
+    self.userCity.layer.borderColor = tintColor.CGColor;
     self.userCity.layer.borderWidth = 1;
     self.userCity.layer.cornerRadius = 4;
 }

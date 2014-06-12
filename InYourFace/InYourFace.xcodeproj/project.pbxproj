@@ -32,6 +32,7 @@
 		CF6525581949C484008F8A0F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6525571949C484008F8A0F /* QuartzCore.framework */; };
 		CF65255D1949C4E5008F8A0F /* IYFVideoPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF65255C1949C4E5008F8A0F /* IYFVideoPlayViewController.m */; };
 		CF6525601949C4FB008F8A0F /* IYFVideoRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF65255F1949C4FB008F8A0F /* IYFVideoRecordViewController.m */; };
+		CF6525641949D826008F8A0F /* IYFGradientImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6525631949D826008F8A0F /* IYFGradientImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		CF65255C1949C4E5008F8A0F /* IYFVideoPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYFVideoPlayViewController.m; sourceTree = "<group>"; };
 		CF65255E1949C4FB008F8A0F /* IYFVideoRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IYFVideoRecordViewController.h; sourceTree = "<group>"; };
 		CF65255F1949C4FB008F8A0F /* IYFVideoRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYFVideoRecordViewController.m; sourceTree = "<group>"; };
+		CF6525621949D826008F8A0F /* IYFGradientImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IYFGradientImageView.h; sourceTree = "<group>"; };
+		CF6525631949D826008F8A0F /* IYFGradientImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYFGradientImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,8 @@
 				CF65252119499D37008F8A0F /* IYFViewController.m */,
 				CF65252319499D37008F8A0F /* Images.xcassets */,
 				CF65251219499D37008F8A0F /* Supporting Files */,
+				CF6525621949D826008F8A0F /* IYFGradientImageView.h */,
+				CF6525631949D826008F8A0F /* IYFGradientImageView.m */,
 			);
 			path = InYourFace;
 			sourceTree = "<group>";
@@ -346,6 +351,7 @@
 				CF6525441949A678008F8A0F /* IYFLaunchViewController.m in Sources */,
 				CF65254C1949A860008F8A0F /* IYFStartViewController.m in Sources */,
 				CF6525601949C4FB008F8A0F /* IYFVideoRecordViewController.m in Sources */,
+				CF6525641949D826008F8A0F /* IYFGradientImageView.m in Sources */,
 				CF65251C19499D37008F8A0F /* IYFAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
