@@ -35,11 +35,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RQV-Yb-MrE" userLabel="Button Container">
-                                <rect key="frame" x="45" y="225" width="230" height="275"/>
+                                <rect key="frame" x="45" y="170" width="230" height="390"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BpB-8y-H5a">
-                                        <rect key="frame" x="55" y="155" width="120" height="120"/>
+                                        <rect key="frame" x="65" y="127" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="IYFstart">
                                             <color key="titleColor" red="0.68235294117647061" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -50,7 +50,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaV-vy-fys">
-                                        <rect key="frame" x="55" y="0.0" width="120" height="120"/>
+                                        <rect key="frame" x="65" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="IYFdiscover">
                                             <color key="titleColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -60,18 +60,29 @@
                                             <segue destination="jX5-M3-cVD" kind="push" id="ixB-nL-grn"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UH3-r0-ktr">
+                                        <rect key="frame" x="65" y="260" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="IYF AboutButton">
+                                            <color key="titleColor" red="0.68235294120000001" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Sd5-25-evR" kind="push" id="6am-nO-BVf"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="sNO-yT-YEk">
-                                <rect key="frame" x="0.0" y="83" width="320" height="31"/>
+                                <rect key="frame" x="0.0" y="47" width="320" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="IYFlogo" translatesAutoresizingMaskIntoConstraints="NO" id="Q9z-aa-DLQ">
-                                <rect key="frame" x="103" y="108" width="130" height="90"/>
+                                <rect key="frame" x="103" y="72" width="130" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="2nb-SM-3CF"/>
@@ -81,10 +92,10 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Q9z-aa-DLQ" firstAttribute="top" secondItem="S51-de-tfm" secondAttribute="bottom" constant="44" id="1sA-57-jYk"/>
+                            <constraint firstItem="Q9z-aa-DLQ" firstAttribute="top" secondItem="S51-de-tfm" secondAttribute="bottom" constant="8" id="1sA-57-jYk"/>
                             <constraint firstAttribute="trailing" secondItem="sNO-yT-YEk" secondAttribute="trailing" id="chb-uL-Bxn"/>
                             <constraint firstItem="sNO-yT-YEk" firstAttribute="leading" secondItem="Czp-fC-toZ" secondAttribute="leading" id="nyr-Gp-qmM"/>
-                            <constraint firstItem="sNO-yT-YEk" firstAttribute="top" secondItem="S51-de-tfm" secondAttribute="bottom" constant="19" id="rtp-cD-ruN"/>
+                            <constraint firstItem="sNO-yT-YEk" firstAttribute="top" secondItem="S51-de-tfm" secondAttribute="bottom" constant="-17" id="rtp-cD-ruN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0Hc-9X-w3F"/>
@@ -263,6 +274,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DA9-63-bXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1073" y="676"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fwH-tO-Che">
+            <objects>
+                <viewController id="Sd5-25-evR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fQF-mM-rae"/>
+                        <viewControllerLayoutGuide type="bottom" id="hFx-nD-dC1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5ha-ez-l0l">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="IYFlogo" translatesAutoresizingMaskIntoConstraints="NO" id="S1s-bO-3uE">
+                                <rect key="frame" x="95" y="69" width="126" height="88"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Why?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qW9-Dm-58t">
+                                <rect key="frame" x="20" y="154" width="44" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="8To-Gh-WJk">
+                                <rect key="frame" x="20" y="177" width="280" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Often we forget that there is a real person with a real problem behind an email or a comment on an article. InYourFace aims to add a face to issues and remind people that we are all human.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdQ-kP-mRR">
+                                <rect key="frame" x="19" y="320" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="276" translatesAutoresizingMaskIntoConstraints="NO" id="yCn-da-qdj">
+                                <rect key="frame" x="20" y="342" width="276" height="203"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Do you have an issue? Start a campaign by taking a 30 second video of yourself and your issue. Once your campaign is completed, you can gain support for your issue through InYourFace. Instead of one dimensional comments, supporters can upload their own videos to show support or to show their similar issue. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DRr-6k-Rhu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lEL-Rf-HUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="1544"/>
         </scene>
         <!--Video Record View Controller-->
         <scene sceneID="xYc-Kx-Ccn">
@@ -656,6 +722,7 @@
     </scenes>
     <resources>
         <image name="1" width="1333" height="833"/>
+        <image name="IYF AboutButton" width="300" height="300"/>
         <image name="IYF Talktohand" width="646" height="644"/>
         <image name="IYFarrow" width="10" height="10"/>
         <image name="IYFdiscover" width="301" height="301"/>
