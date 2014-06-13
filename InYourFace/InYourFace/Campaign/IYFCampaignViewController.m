@@ -118,6 +118,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.row) {
         case 2:
+            [self performSegueWithIdentifier:@"viewJohnSmith" sender:self];
             break;
         case 3:
             [self mapTapped];

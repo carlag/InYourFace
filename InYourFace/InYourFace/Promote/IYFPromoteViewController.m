@@ -92,7 +92,6 @@
             break;
         case 4:
             image = [UIImage imageNamed:@"IYF ContactIcon"];
-
             break;
             
         default:
@@ -139,6 +138,7 @@
             [self performSegueWithIdentifier:@"addVideo" sender:self];
             break;
         case 4:
+            [self performSegueWithIdentifier:@"viewContact" sender:self];
             break;
             
         default:

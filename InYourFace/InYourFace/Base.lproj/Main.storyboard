@@ -645,6 +645,7 @@
                         <outlet property="viewVideosButton" destination="MnR-Hk-qge" id="01T-hM-AKK"/>
                         <segue destination="n5o-SW-5Qx" kind="push" identifier="showSupport" id="xXx-9T-VgF"/>
                         <segue destination="t9l-71-Wsp" kind="push" identifier="showVideos" id="dI4-MU-n5o"/>
+                        <segue destination="CYp-sR-QFo" kind="push" identifier="viewJohnSmith" id="NH8-bw-GoV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vc9-xp-gLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -688,11 +689,54 @@
                     <connections>
                         <outlet property="promoteTableView" destination="RLo-wH-Kxo" id="to0-ET-Mjh"/>
                         <segue destination="ESC-aL-1fe" kind="push" identifier="addVideo" id="NUy-Jy-UP7"/>
+                        <segue destination="CYp-sR-QFo" kind="push" identifier="viewContact" id="Xwy-zs-3J1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GsJ-bc-xUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3620" y="-1109"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="g6v-xG-Nvu">
+            <objects>
+                <viewController id="CYp-sR-QFo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tWL-Ly-TS6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tyf-eX-adB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W0T-5h-TpT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="johnsmith@gmail.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WM9-K9-B7T">
+                                <rect key="frame" x="76" y="130" width="168" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="083 111 222 333" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2T-F5-DxP">
+                                <rect key="frame" x="96" y="202" width="129" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cape Town" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYf-2q-31P">
+                                <rect key="frame" x="117" y="273" width="86" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d4X-fA-pnT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E4S-tl-ve7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2929" y="-2550"/>
         </scene>
         <!--Video Play View Controller-->
         <scene sceneID="lFg-se-8Ta">
@@ -731,5 +775,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="veR-Bn-wzM"/>
         <segue reference="NUy-Jy-UP7"/>
+        <segue reference="Xwy-zs-3J1"/>
     </inferredMetricsTieBreakers>
 </document>
