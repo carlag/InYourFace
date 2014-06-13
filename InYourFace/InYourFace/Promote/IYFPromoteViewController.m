@@ -10,6 +10,7 @@
 
 @interface IYFPromoteViewController ()
 @property (nonatomic, strong) NSArray *textArray;
+@property int selectedIndex;
 
 @end
 
@@ -30,6 +31,7 @@
     UIColor *tintColor = [UIColor colorWithRed:0/255.0f green:204/255.0f blue:255/255.0f alpha:1];
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName :tintColor};
     [self.navigationController.navigationBar setTintColor:tintColor];
+    self.selectedIndex = -1;
 }
 
 - (void)viewDidLoad
@@ -37,7 +39,6 @@
     [super viewDidLoad];
     [self setupTextArray];
     [self.promoteTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"promoteTableViewCell"];
-
     // Do any additional setup after loading the view.
 }
 
@@ -65,7 +66,13 @@
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 200, 40)];
     label.text =  [self.textArray objectAtIndex:indexPath.row];
-    label.textColor = tintColor;
+    
+    if(self.selectedIndex == indexPath.row) {
+        label.textColor = [UIColor whiteColor];
+    } else {
+        label.textColor = tintColor;
+    }
+    
     
     UIImage *image;
    
@@ -113,8 +120,14 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    self.selectedIndex = indexPath.row;
+    
+    [tableView reloadData];
+    
     switch (indexPath.row) {
         case 0:
+            [self share];
             break;
         case 1:
             break;
@@ -129,5 +142,15 @@
         default:
             break;
     }
+
+}
+
+-(void)share
+{
+    NSArray *activityItems = @[self.title];
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    
+    [self presentViewController:activityVC animated:YES completion:nil];
+    
 }
 @end
