@@ -34,6 +34,7 @@
 		CF6525601949C4FB008F8A0F /* IYFVideoRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF65255F1949C4FB008F8A0F /* IYFVideoRecordViewController.m */; };
 		CF6525641949D826008F8A0F /* IYFGradientImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6525631949D826008F8A0F /* IYFGradientImageView.m */; };
 		CF8DC963194AD9D400D7E2FC /* IYFCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8DC962194AD9D400D7E2FC /* IYFCategoriesViewController.m */; };
+		CF8DC967194AE57F00D7E2FC /* IYFPromoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8DC966194AE57F00D7E2FC /* IYFPromoteViewController.m */; };
 		CFBB5DFE194A31FF00982923 /* IYFCampaignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBB5DFD194A31FF00982923 /* IYFCampaignViewController.m */; };
 		CFBB5E01194A624E00982923 /* IYFVideoSavedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBB5E00194A624E00982923 /* IYFVideoSavedViewController.m */; };
 /* End PBXBuildFile section */
@@ -88,6 +89,8 @@
 		CF6525631949D826008F8A0F /* IYFGradientImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYFGradientImageView.m; sourceTree = "<group>"; };
 		CF8DC961194AD9D400D7E2FC /* IYFCategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IYFCategoriesViewController.h; sourceTree = "<group>"; };
 		CF8DC962194AD9D400D7E2FC /* IYFCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYFCategoriesViewController.m; sourceTree = "<group>"; };
+		CF8DC965194AE57F00D7E2FC /* IYFPromoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IYFPromoteViewController.h; sourceTree = "<group>"; };
+		CF8DC966194AE57F00D7E2FC /* IYFPromoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYFPromoteViewController.m; sourceTree = "<group>"; };
 		CFBB5DFC194A31FF00982923 /* IYFCampaignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IYFCampaignViewController.h; sourceTree = "<group>"; };
 		CFBB5DFD194A31FF00982923 /* IYFCampaignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IYFCampaignViewController.m; sourceTree = "<group>"; };
 		CFBB5DFF194A624E00982923 /* IYFVideoSavedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IYFVideoSavedViewController.h; sourceTree = "<group>"; };
@@ -163,6 +166,7 @@
 		CF65251119499D37008F8A0F /* InYourFace */ = {
 			isa = PBXGroup;
 			children = (
+				CF8DC964194AE57000D7E2FC /* Promote */,
 				CF8DC960194AD9C200D7E2FC /* Categories */,
 				CFBB5DFB194A319700982923 /* Campaign */,
 				CF6525591949C4B3008F8A0F /* Play */,
@@ -266,6 +270,15 @@
 				CF8DC962194AD9D400D7E2FC /* IYFCategoriesViewController.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		CF8DC964194AE57000D7E2FC /* Promote */ = {
+			isa = PBXGroup;
+			children = (
+				CF8DC965194AE57F00D7E2FC /* IYFPromoteViewController.h */,
+				CF8DC966194AE57F00D7E2FC /* IYFPromoteViewController.m */,
+			);
+			path = Promote;
 			sourceTree = "<group>";
 		};
 		CFBB5DFB194A319700982923 /* Campaign */ = {
@@ -379,6 +392,7 @@
 				CFBB5DFE194A31FF00982923 /* IYFCampaignViewController.m in Sources */,
 				CF65252219499D37008F8A0F /* IYFViewController.m in Sources */,
 				CF65251819499D37008F8A0F /* main.m in Sources */,
+				CF8DC967194AE57F00D7E2FC /* IYFPromoteViewController.m in Sources */,
 				CF6525491949A854008F8A0F /* IYFDiscoverViewController.m in Sources */,
 				CFBB5E01194A624E00982923 /* IYFVideoSavedViewController.m in Sources */,
 				CF6525441949A678008F8A0F /* IYFLaunchViewController.m in Sources */,

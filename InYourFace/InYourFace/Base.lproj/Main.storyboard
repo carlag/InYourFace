@@ -468,9 +468,6 @@
                                     <color key="titleColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="t9l-71-Wsp" kind="push" identifier="showVideos" id="sbq-Mi-Z2V"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9x-Nv-0Kf">
                                 <rect key="frame" x="235" y="444" width="55" height="30"/>
@@ -561,7 +558,7 @@
                                 <rect key="frame" x="194" y="216" width="56" height="39"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="RGe-H4-OAd">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="RGe-H4-OAd">
                                 <rect key="frame" x="-11" y="258" width="331" height="310"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -591,12 +588,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vc9-xp-gLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4086" y="-112"/>
+            <point key="canvasLocation" x="2518" y="-1360"/>
         </scene>
-        <!--View Controller-->
+        <!--Promote View Controller-->
         <scene sceneID="m31-1s-hHB">
             <objects>
-                <viewController id="n5o-SW-5Qx" sceneMemberID="viewController">
+                <viewController id="n5o-SW-5Qx" customClass="IYFPromoteViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J8l-DT-Jwc"/>
                         <viewControllerLayoutGuide type="bottom" id="Bda-cM-lLa"/>
@@ -604,13 +601,38 @@
                     <view key="view" contentMode="scaleToFill" id="1vM-du-6Yl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="RLo-wH-Kxo">
+                                <rect key="frame" x="0.0" y="155" width="320" height="393"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="n5o-SW-5Qx" id="3it-23-6Ti"/>
+                                    <outlet property="delegate" destination="n5o-SW-5Qx" id="ISb-qa-KjA"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do you identify with this campaign? Show your support! " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="319" translatesAutoresizingMaskIntoConstraints="NO" id="Ezl-4F-H6B">
+                                <rect key="frame" x="1" y="75" width="319" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="aYH-dl-h8O"/>
+                    <connections>
+                        <outlet property="promoteTableView" destination="RLo-wH-Kxo" id="to0-ET-Mjh"/>
+                        <segue destination="t9l-71-Wsp" kind="push" id="j0D-Qs-Eab"/>
+                        <segue destination="ESC-aL-1fe" kind="push" id="NUy-Jy-UP7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GsJ-bc-xUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4780" y="-875"/>
+            <point key="canvasLocation" x="3052" y="-1335"/>
         </scene>
         <!--Video Play View Controller-->
         <scene sceneID="lFg-se-8Ta">
@@ -629,7 +651,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0G-Yf-3Ur" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4780" y="-158"/>
+            <point key="canvasLocation" x="3654" y="-1321"/>
         </scene>
     </scenes>
     <resources>
@@ -647,5 +669,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="veR-Bn-wzM"/>
+        <segue reference="NUy-Jy-UP7"/>
     </inferredMetricsTieBreakers>
 </document>

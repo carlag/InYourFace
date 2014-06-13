@@ -92,8 +92,13 @@
     videoCountLabel.textAlignment = NSTextAlignmentRight;
 
     
+    UIImage *videoCountImage = [UIImage imageNamed:@"IYF camera"];
+    UIImageView *videoCountImageView =[[UIImageView alloc] initWithFrame:CGRectMake(320-50-40, 0, 40, 40)];
+    [videoCountImageView setImage:videoCountImage];
+    
     [campaignName addSubview:label];
     [campaignName addSubview:videoCountLabel];
+    [campaignName addSubview:videoCountImageView];
     [cell addSubview:imageView];
     [cell setNeedsLayout];
     
@@ -107,12 +112,8 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.item == 0)
-    {
         [self performSegueWithIdentifier:@"ViewCampaign" sender:self];
-        
-        
-    }
+    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
