@@ -39,7 +39,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BpB-8y-H5a">
-                                        <rect key="frame" x="65" y="127" width="100" height="100"/>
+                                        <rect key="frame" x="65" y="139" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="IYFstart">
                                             <color key="titleColor" red="0.68235294117647061" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -50,7 +50,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaV-vy-fys">
-                                        <rect key="frame" x="65" y="0.0" width="100" height="100"/>
+                                        <rect key="frame" x="65" y="19" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="IYFdiscover">
                                             <color key="titleColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -74,15 +74,15 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="sNO-yT-YEk">
-                                <rect key="frame" x="0.0" y="47" width="320" height="31"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="sNO-yT-YEk">
+                                <rect key="frame" x="0.0" y="51" width="320" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="IYFlogo" translatesAutoresizingMaskIntoConstraints="NO" id="Q9z-aa-DLQ">
-                                <rect key="frame" x="103" y="72" width="130" height="90"/>
+                                <rect key="frame" x="103" y="76" width="130" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="2nb-SM-3CF"/>
@@ -91,12 +91,6 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Q9z-aa-DLQ" firstAttribute="top" secondItem="S51-de-tfm" secondAttribute="bottom" constant="8" id="1sA-57-jYk"/>
-                            <constraint firstAttribute="trailing" secondItem="sNO-yT-YEk" secondAttribute="trailing" id="chb-uL-Bxn"/>
-                            <constraint firstItem="sNO-yT-YEk" firstAttribute="leading" secondItem="Czp-fC-toZ" secondAttribute="leading" id="nyr-Gp-qmM"/>
-                            <constraint firstItem="sNO-yT-YEk" firstAttribute="top" secondItem="S51-de-tfm" secondAttribute="bottom" constant="-17" id="rtp-cD-ruN"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0Hc-9X-w3F"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -275,7 +269,7 @@
             </objects>
             <point key="canvasLocation" x="1073" y="676"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - About-->
         <scene sceneID="fwH-tO-Che">
             <objects>
                 <viewController id="Sd5-25-evR" sceneMemberID="viewController">
@@ -324,7 +318,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="DRr-6k-Rhu"/>
+                    <navigationItem key="navigationItem" title="About" id="DRr-6k-Rhu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lEL-Rf-HUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -698,7 +692,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GsJ-bc-xUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3300" y="-1149"/>
+            <point key="canvasLocation" x="3620" y="-1109"/>
         </scene>
         <!--Video Play View Controller-->
         <scene sceneID="lFg-se-8Ta">

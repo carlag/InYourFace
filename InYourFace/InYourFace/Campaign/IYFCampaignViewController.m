@@ -7,6 +7,7 @@
 //
 
 #import "IYFCampaignViewController.h"
+#import <MapKit/MapKit.h>
 
 @interface IYFCampaignViewController ()
 @property (nonatomic, strong) NSArray *textArray;
@@ -119,6 +120,7 @@
         case 2:
             break;
         case 3:
+            [self mapTapped];
             break;
         case 4:
             [self performSegueWithIdentifier:@"showVideos" sender:self];
@@ -132,4 +134,36 @@
     }
 }
 
+
+- (void)mapTapped {
+    
+    //give the user a choice of Apple or Google Maps
+    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"Navigate to Event" delegate:self
+                                              cancelButtonTitle:@"Cancel"
+                                         destructiveButtonTitle:nil
+                                              otherButtonTitles:@"Apple Maps", nil];
+    [sheet showInView:self.view];
+}
+
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    //coordinates for the place we want to display
+    CLLocationCoordinate2D baxterLocation = CLLocationCoordinate2DMake(-33.9253,18.4239);
+    if (buttonIndex==0) {
+        //Apple Maps, using the MKMapItem class
+        MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:baxterLocation addressDictionary:nil];
+        MKMapItem *item = [[MKMapItem alloc] initWithPlacemark:placemark];
+        item.name = @"Cape Town";
+        [item openInMapsWithLaunchOptions:nil];
+    } else if (buttonIndex==1) {
+        //Google Maps
+        //construct a URL using the comgooglemaps schema
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"comgooglemaps://?center=%f,%f",baxterLocation.latitude,baxterLocation.longitude]];
+        if (![[UIApplication sharedApplication] canOpenURL:url]) {
+            NSLog(@"Google Maps app is not installed");
+            //left as an exercise for the reader: open the Google Maps mobile website instead!
+        } else {
+            [[UIApplication sharedApplication] openURL:url];
+        }
+    }
+}
 @end

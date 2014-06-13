@@ -91,6 +91,8 @@
             image = [UIImage imageNamed:@"IYF camera"];
             break;
         case 4:
+            image = [UIImage imageNamed:@"IYF ContactIcon"];
+
             break;
             
         default:
