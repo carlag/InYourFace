@@ -584,6 +584,7 @@
                         <outlet property="mapButton" destination="uoH-U8-rOF" id="NJq-IN-VFL"/>
                         <outlet property="viewVideosButton" destination="MnR-Hk-qge" id="01T-hM-AKK"/>
                         <segue destination="n5o-SW-5Qx" kind="push" identifier="showSupport" id="xXx-9T-VgF"/>
+                        <segue destination="t9l-71-Wsp" kind="push" identifier="showVideos" id="dI4-MU-n5o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vc9-xp-gLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -602,8 +603,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="RLo-wH-Kxo">
-                                <rect key="frame" x="0.0" y="155" width="320" height="393"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="RLo-wH-Kxo">
+                                <rect key="frame" x="30" y="155" width="260" height="393"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -626,13 +627,12 @@
                     <navigationItem key="navigationItem" id="aYH-dl-h8O"/>
                     <connections>
                         <outlet property="promoteTableView" destination="RLo-wH-Kxo" id="to0-ET-Mjh"/>
-                        <segue destination="t9l-71-Wsp" kind="push" id="j0D-Qs-Eab"/>
-                        <segue destination="ESC-aL-1fe" kind="push" id="NUy-Jy-UP7"/>
+                        <segue destination="ESC-aL-1fe" kind="push" identifier="addVideo" id="NUy-Jy-UP7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GsJ-bc-xUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3052" y="-1335"/>
+            <point key="canvasLocation" x="3300" y="-1149"/>
         </scene>
         <!--Video Play View Controller-->
         <scene sceneID="lFg-se-8Ta">
@@ -651,7 +651,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0G-Yf-3Ur" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3654" y="-1321"/>
+            <point key="canvasLocation" x="3628" y="-1803"/>
         </scene>
     </scenes>
     <resources>

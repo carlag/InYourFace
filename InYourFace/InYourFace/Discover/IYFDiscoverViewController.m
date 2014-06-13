@@ -93,7 +93,7 @@
 
     
     UIImage *videoCountImage = [UIImage imageNamed:@"IYF camera"];
-    UIImageView *videoCountImageView =[[UIImageView alloc] initWithFrame:CGRectMake(320-50-40, 0, 40, 40)];
+    UIImageView *videoCountImageView =[[UIImageView alloc] initWithFrame:CGRectMake(320-60, 10, 25, 25)];
     [videoCountImageView setImage:videoCountImage];
     
     [campaignName addSubview:label];
