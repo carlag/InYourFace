@@ -9,7 +9,7 @@
 #import "IYFCampaignViewController.h"
 
 @interface IYFCampaignViewController ()
-
+@property (nonatomic, strong) NSArray *textArray;
 @end
 
 @implementation IYFCampaignViewController
@@ -26,6 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setupTextArray];
+    [self.campaignInfoTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"tableViewCell"];
 
     // Do any additional setup after loading the view.
 }
@@ -60,6 +62,8 @@
     self.addToCampaignButton.layer.borderColor = tintColor.CGColor;
     self.addToCampaignButton.layer.borderWidth = 1;
     self.addToCampaignButton.layer.cornerRadius = 4;
+    
+    [self.campaignInfoTableView setBackgroundColor:[UIColor blackColor]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,15 +72,64 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - table view - 
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tableViewCell" forIndexPath:indexPath];
+    
+    cell.textLabel.text = [self.textArray objectAtIndex:indexPath.row];
+    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.backgroundColor = [UIColor blackColor];
+    
+    switch (indexPath.row) {
+        case 2:
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            break;
+        case 3:
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            break;
+        case 4:
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            break;
+        case 6:
+            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            break;
+            
+        default:
+            break;
+    }
+    
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    return cell;
 }
-*/
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.textArray count];
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+-(void)setupTextArray {
+    self.textArray = @[@"Started 13 June 2014", @"Last updated 13 June 2014",@"John Smith", @"Cape Town", @"14 Videos", @"21 Followers", @"Show support"];
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    switch (indexPath.row) {
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            [self performSegueWithIdentifier:@"showVideos" sender:self];
+            break;
+        case 6:
+            [self performSegueWithIdentifier:@"showSupport" sender:self];
+            break;
+            
+        default:
+            break;
+    }
+}
 
 @end
